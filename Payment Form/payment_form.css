@@ -1,0 +1,96 @@
+/* Reset some default margin and padding */
+body, h1, p {
+    margin-left:10%;
+    margin-right:10%;
+    margin-bottom:5%;
+    padding: 0;
+}
+
+body {
+  background-color: whitesmoke;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header {
+    text-align: center;
+    position: relative;
+    top: 0; 
+    background-color:#F5F5F5; 
+    color: black;
+    padding: 10px;
+    margin: auto;
+    border-top: 5px;
+    border: 3px;
+    border-color:black;
+    border-style:solid;
+    z-index: 100; 
+    transition: color 1s, border-color 1s;
+}
+    
+header:hover {
+  color: #007BFF;
+  border: 5px;
+  border-style: solid;
+  border-color:#007BFF;
+}   
+
+header:hover::after {
+    content: "Please fill the form below"; 
+    display: block;
+    font-size: 0.8em;
+    color: gray; 
+}
+  
+
+.payment_form {
+  background-color:#F5F5F5;
+  color: #333333;
+  box-sizing: border-box;
+  margin: 10% auto;
+  border: 5px solid gray;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: large;
+}
+
+.payment_form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.payment_form label {
+  font-weight: bold;
+}
+
+.payment_form input[type="text"],
+.payment_form input[type="date"],
+.payment_form input[type="email"],
+.payment_form input[type="tel"],
+.payment_form select,
+.payment_form input[type="password"],
+.payment_form input[type="file"] {
+  height: 30px;
+  padding: 5px;
+  width: 95%;
+}
+.payment_form:hover {
+    border: 5px;
+    border-style: solid;
+    border-color:#007BFF;
+  } 
+
+#submit_button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  transition: font-size 1s, background-color 0.3s, color 0.3s, border-color 0.3s;
+  cursor: pointer;
+}
+
+#submit_button:hover {
+    font-size: medium;
+  background-color:#007BFF;
+  color: black;
+  border-color: black;
+  border-radius: 3px;
+}

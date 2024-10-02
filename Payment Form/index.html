@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="payment_form.css" />
+    <title>Payment Form</title>
+  </head>
+  <body>
+    <header>
+      <h1><u>Payment Credentials</u></h1>
+    </header>
+    <div class="payment_form">
+      <form>
+        <label for="first_name">First Name:</label>
+        <input
+          type="text"
+          id="first_name"
+          name="first_name"
+          placeholder="First Name"
+          required
+        />
+
+        <label for="last_name">Last Name:</label>
+        <input
+          type="text"
+          id="last_name"
+          name="last_name"
+          placeholder="Last Name"
+          required
+        />
+
+        <label for="dob">DOB:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="cnic">CNIC:</label>
+        <input
+          type="text"
+          id="cnic"
+          name="cnic"
+          placeholder="Without Dashes"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="example@gmail.com"
+          required
+        />
+
+        <label for="phone">Phone No.:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="0300-0000000"
+          required
+        />
+
+        <fieldset>
+          <legend>Gender</legend>
+          <label><input type="radio" name="gender" value="Male" />Male</label>
+          <label
+            ><input type="radio" name="gender" value="Female" />Female</label
+          >
+          <label><input type="radio" name="gender" value="other" />Other</label>
+        </fieldset>
+
+        <label for="card_type">Credit Card:</label>
+        <select id="card_type" name="card_type">
+          <option value="">--Choose--</option>
+          <option value="Visa">Visa Card</option>
+          <option value="Paypal">Paypal</option>
+          <option value="Debit Card">Debit Card</option>
+        </select>
+
+        <label for="card_id">Card ID:</label>
+        <input
+          type="text"
+          id="card_id"
+          name="card_id"
+          placeholder="Card-Number"
+          required
+        />
+
+        <label for="pin">Pin Code:</label>
+        <input
+          type="password"
+          id="pin"
+          name="pin"
+          placeholder="--Pincode--"
+          required
+        />
+
+        <fieldset>
+          <legend>Upload The Required Document:</legend>
+          <input type="file" id="document" name="document" />
+        </fieldset>
+
+        <fieldset>
+          <label
+            ><input type="checkbox" id="agreement" name="agreement" required />
+            User Agreement, I pledge that all the above fields are filled
+            correctly.</label
+          >
+        </fieldset>
+
+        <input type="submit" value="Submit" id="submit_button" />
+      </form>
+    </div>
+  </body>
+  <script src="payment_form.js"></script>
+</html>
